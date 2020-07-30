@@ -23,31 +23,27 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script></head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top custom-navbar-brand">
-    <a class="navbar-brand" href="/">
-      <img src="assets/img/hackphslogo2019.svg" width="65" alt="hackPHS">
-    </a>
-    <a class="navbar-brand custom-brand" href="/">hackPHS</a>
-    <div></div>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav mr-auto mt-2 mt-sm-0" style="font-size: 1.025rem">
-        <!--
-        <li class="nav-item active">
-          <a class="nav-link" href="https://clipboard.hackphs.tech/">Clipboard<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item d-mmd-none">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark flex-row-reverse sticky-top custom-navbar-brand">
+    <!-- <form class="form-inline my-2 my-md-0 space-for-mlh" id="regbuttonnav"> -->
+    <div class="collapse navbar-collapse order-4" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mt-2 mt-sm-0" style="font-size: 1.025rem">
+        <li class="nav-item d-none d-sm-inline">
           <a class="nav-link" href="#about">About</a>
         </li>
-        <li class="nav-item d-mmd-none">
+        <li class="nav-item d-none d-sm-inline">
           <a class="nav-link" href="#faq">FAQ</a>
         </li>
-        <li class="nav-item d-mmd-none">
+      <!--
+        <li class="nav-item d-navone-none">
           <a class="nav-link" href="#schedule">Schedule</a>
         </li>
-        <li class="nav-item d-mmd-none">
+      -->
+        <li class="nav-item d-none d-sm-inline">
           <a class="nav-link" href="#sponsors">Sponsors</a>
         </li>
-        -->
+        <li class="nav-item d-sm-none">
+          <a class="nav-link" href="https://clipboard.hackphs.tech/">Register</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Past Years
@@ -59,28 +55,336 @@
         </li>
       </ul>
     </div>
-    <!--<form class="form-inline my-2 my-md-0 navbar-div" id="regbuttonnav">-->
-    <form class="form-inline my-2 my-md-0" id="regbuttonnav">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <form class="form-inline my-2 my-md-0 flex-row-reverse centering-div centering-sm-unset order-1" id="regbuttonnav d-navthree-none">
+      <button class="navbar-toggler d-collapsing-none" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="register-button">
-        <!--<a class="btn btn-outline-light" href="https://clipboard.hackphs.tech/" role="button">Registeration</a>-->
+      <button class="navbar-toggler d-none d-collapsing-block" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
+          <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
+        </svg>
+      </button>
+      <div class="register-button pl-3 d-none d-sm-block">
+        <a class="btn btn-outline-light" href="https://clipboard.hackphs.tech/" role="button">Register</a>
       </div>
     </form>
+    <!-- <div class="d-none-if-collapse-showing centering-div"></div> -->
+    <a class="navbar-brand custom-brand order-5 order-collapsing-2" href="/">hackPHS</a>
+    <a class="navbar-brand centering-div centering-sm-unset order-6 order-collapsing-3" href="/">
+      <img src="assets/img/hackphslogo2019.svg" width="65" alt="hackPHS">
+    </a>
   </nav>
-  <div id="main-background" class="d-flex flex-column">
-    <div id="main-text-positioning" class="d-flex justify-content-center">
-      <span id="main-text">
-        hackPHS 2020
-      </span>
+  <div id="foliage">
+    <div id="Foliage_Top" class="background-image Foliage_Top"></div>
+    <div id="mid-foliage">
+      <div id="half-mid-foliage" class="background-image Foliage_Mid_1"></div>
     </div>
-    <div id="covid-update-positioning">
-      <div id="covid-update-background">
-        <span class="text-center">
-          <a id="covid-update" href="https://medium.com/@hackPHS/7-1-2020-coronavirus-update-30bb441ff565">Read our covid update</a>
+    <div id="Foliage_Bottom" class="background-image Foliage_Bottom"></div>
+  </div>
+  <div id="foliage-spacer" class="prevent-collapse">
+    <div id="foliage-content" class="prevent-collapse">
+      <div class="d-flex justify-content-center" style="margin-top:24%">
+        <span class="main-text" style="font-size: clamp(4rem, 9vw, 10rem)">
+          hackPHS 2020
         </span>
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="main-text" style="font-size: clamp(2.66rem, 6vw, 6.66rem)" >
+          Nov 7-8
+        </span>
+      </div>
+      <div class="d-flex justify-content-center" style="margin-top:20px">
+        <a class="btn btn-round" href="https://clipboard.hackphs.tech/" role="button">Register Now!</a>
+      </div>
+      <div class="container position-relative" style="margin-top:10%">
+        <div id="about" class="scroll-position"></div>
+        <div class="row">
+          <div class="col">
+            <div class="floating-text p-1">
+              <div class="text-center">
+                <h1>About</h1>
+                <hr/>
+                <h3>What is hackPHS?</h3>
+                <p>hackPHS hosts over 300 high school students from across New Jersey to collaborate, innovate, and create in a 24-hour, student organized hackathon based at Princeton High School. Whether you're a complete beginner or an experienced hacker, hackPHS will have something for you!</p>
+                <h3>When and Where is hackPHS?</h3>
+                <p>hackPHS is moving online due to COVID-19. This means that anyone, anywhere in the world can participate! <b>All times are tentative</b>, but as of now the opening ceremony is planned to start at <b>10AM</b> on Saturday and the closing ceremony will end at <b>12PM</b> on Sunday</p>
+                <h3>Who pays for all this?  </h3>
+                <p>hackPHS is completely free to everyone, thanks to our amazing <a href="#sponsors">sponsors!</a></p>
+                <h3>What is a hackathon?</h3>
+                <p>Hackathons are where creative and enthusiastic people come together to build awesome projects in a single all-nighter. With awesome workshops and incredible prizes, hackers will learn about new tech, build innovative solutions to real-world problems, and share their creation with the community, all in one event. If you are looking for a competition, a place to meet fellow hackers, or even just a place to learn how to code, hackathons are for you. If you want to learn more, see the <a href="https://mlh.io/faq">MLH Hackathon FAQ.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<div class="row d-none d-xl-block" style="margin-top:5%">
+          <div class="col">
+            <div class="text-center" style="color: white">
+              <a href="#FAQ" id="faq-link" class="text-decoration-none d-inline-block">
+                <h1 class="d-inline">FAQ</h1>
+                <div style="margin-top:0">
+                  <svg viewBox="0 0 16 16" preserveAspectRatio="none" width="300" height="150" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>-->
       </div>
     </div>
   </div>
+  <script>
+    var BOTFOLIAGEFACTOR=0.15;
+    var fullFoliageBlock=$(`
+    <div class="repeating-mid-foliage">
+      <div class="background-image Foliage_Mid_1"></div>
+      <div class="background-image Foliage_Mid_2"></div>
+    </div>
+    `);
+    function foliage_content(){
+      $("#mid-foliage").children(".repeating-mid-foliage").remove();
+      $("#half-mid-foliage").show();
+      var contentHeight=$("#foliage-content").outerHeight();
+      var foliageBlockHeight=$("#half-mid-foliage").outerHeight();
+      var effContentHeight=contentHeight-$("#Foliage_Top").outerHeight()-$("#Foliage_Bottom").outerHeight()*BOTFOLIAGEFACTOR;
+      var numHalfBlocks=Math.ceil(effContentHeight/foliageBlockHeight);
+      for(var i=0; i<Math.floor(numHalfBlocks/2); i++){
+        $("#mid-foliage").prepend(fullFoliageBlock.clone());
+      }
+      if(numHalfBlocks%2==0){
+        $("#half-mid-foliage").hide();
+      }
+      $("#foliage-spacer").css("margin-top", "-"+$("#foliage").height()+"px");
+      $("#foliage-spacer").height($("#foliage").height());
+    }
+    foliage_content();
+    $(window).on('resize', foliage_content);
+  </script>
+  <div id="trunk">
+    <div id="half-trunk" class="background-image Trunk_Sky_1"></div>
+    <div id="Roots_Start" class="background-image Roots_Start"></div>
+  </div>
+  <div id="trunk-spacer" class="prevent-collapse" style="margin-right:15%">
+    <div id="trunk-content" class="prevent-collapse">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="text-center mb-4 pr-4 position-relative">
+              <div id="faq" class="scroll-position"></div>
+              <h1 class="faq-text" style="font-size:3.5rem">FAQ</h1>
+            </div>
+            <div class="accordion p-xl-0" id="faqAccordion" style="padding-bottom: 200px;">
+              <div class="card">
+                <div class="card-header" id="headingCovid">
+                  <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseCovid" aria-expanded="false" aria-controls="collapseCovid">
+                    <div class="faq-text">How will we get our swag?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+                  </button>
+                </div>
+                <div id="collapseCovid" class="collapse" aria-labelledby="headingCovid" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    As long as you attend at least one workshop or submit your project to devpost, you will be mailed all of the swag that you would normally receive at the event. This includes t-shirt, stickers, etc. This is true no matter where you live in the world!
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <div class="faq-text">Who can attend this event?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+                  </button>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    Unfortunately, this event is for high school students only. If you are no longer a high schooler and would like to help out, consider applying to be a mentor.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingApply">
+                  <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseApply" aria-expanded="false" aria-controls="collapseApply">
+                    <div class="faq-text">How do I apply?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+                  </button>
+                </div>
+                <div id="collapseApply" class="collapse" aria-labelledby="headingApply" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    Apply by going to our <a href="https://clipboard.hackphs.tech/">registration link</a>. Swag will be distributed on a first-come first-serve basis, so apply ASAP!
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingMentor">
+                  <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseMentor" aria-expanded="false" aria-controls="collapseMentor">
+                    <div class="faq-text">How do I become a mentor? chaperone? volunteer?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+                  </button>
+                </div>
+                <div id="collapseMentor" class="collapse" aria-labelledby="headingMentor" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    These signups will open soon. Please do not use the normal application form. If you have any questions, please <a href="mailto:team@hackphs.tech">email us</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingNine">
+                  <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    <div class="faq-text">How do I form a team?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+                  </button>
+                </div>
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    Teams of <b>up to 4 people</b> are encouraged (though not mandatory). If you don't have a team before the event, don't worry! At the beginning of the event, there will be a team building workshop, which will be a great way to meet other enthusiastic people and even make new friends.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTen">
+                  <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    <div class="faq-text">Where can I find updates on the event?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+                  </button>
+                </div>
+                <div id="collapseTen" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    No matter if you're a first time hackathon attendee and have no idea what to do (everyone was a beginner once), or are an experienced hacker who wants to give back to the community, it is a good idea to join our <a href="https://www.facebook.com/events/474083593153577/">Facebook event</a>! In addition to all the important announcements and information about the event, you'll be able to find others to guide you through the hackathon process and help you develop something awesome.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <div class="faq-text">Do you have a Code of Conduct?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+                  </button>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    All hackers must abide by <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Major League Hacking's Code of Conduct</a>. TL;DR - all hackers should respect one another.</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <div class="faq-text">What can I win?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+                  </button>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    hackPHS hopes to emphasize learning and collaboration more so than competition - nonetheless, there will be awesome prizes to be won for some the best hacks made during the event! The full prize list will be released later - make sure to follow us on social media to find out when!            </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <div class="faq-text">What can I learn?</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+                  </button>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    While you can learn a great deal in the process of building an ambitious project in such a limited time frame, we also plan to offer many introductory workshops (around 1 hour each) during the event, for those new to software and/or hardware engineering. Specific topics will include Arduino programming, iOS development, and Python, among many others - check our schedule (coming soon) for the full list!
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingEight">
+                  <button class="btn collapsed spread-elements" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <div class="faq-text">My question isn't answered here!</div><div><ion-icon name="ios-arrow-down"></ion-icon></div>
+                  </button>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqAccordion">
+                  <div class="card-body">
+                    Please feel free to email us at <a href="mailto:team@hackphs.tech">team@hackphs.tech</a> if you have any other questions about hackPHS!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var BOTTRUNKFACTOR=0.05;
+    var fullTrunkBlock=$(`
+      <div class="repeating-trunk-block">
+        <div class="background-image Trunk_Sky_1"></div>
+        <div class="background-image Trunk_Sky_2"></div>
+      </div>
+    `);
+    function trunk_content(){
+      $('.collapse').collapse("hide");
+      $(".collapsing").addClass("no-collapse");
+      $("#trunk").children(".repeating-trunk-block").remove();
+      $("#half-trunk").show();
+      var effContentHeight=$("#trunk-content").outerHeight() - $("#trunk").outerWidth()*0.1 - $("#Roots_Start").outerHeight()*BOTTRUNKFACTOR;
+      var trunkBlockHeight=$("#half-trunk").outerHeight();
+      var numHalfBlocks=Math.ceil(effContentHeight/trunkBlockHeight);
+      for(var i=0; i<Math.floor(numHalfBlocks/2); i++){
+        $("#trunk").prepend(fullTrunkBlock.clone());
+      }
+      if(numHalfBlocks%2==0){
+        $("#half-trunk").hide();
+      }
+      $("#trunk-spacer").css("margin-top", "calc(-"+$("#trunk").height()+"px - 10%)");
+      $("#trunk-spacer").css("height", "calc("+$("#trunk").height()+"px + "+($("#trunk").outerWidth()*0.1)+"px)");
+      $(".no-collapse").removeClass("no-collapse");
+    }
+    trunk_content();
+    $(window).on('resize', trunk_content);
+  </script>
+  <div id="roots">
+    <div id="Roots_Header" class="background-image Roots_Header"></div>
+    <div id="Roots_Body" class="background-image Roots_Body"></div>
+    <div id="Roots_End" class="background-image Roots_End"></div>
+  </div>
+  <div id="roots-spacer" class="prevent-collapse position-relative">
+    <div id="sponsors" class="scroll-position"></div>
+    <div style="margin-top: 5.8%" class="text-center">
+      <h1 style="font-size: 11vw">Sponsors</h1>
+    </div>
+    <div id="roots-content" style="position: absolute; top:0; background-image: none;" class="prevent-collapse Roots_Header w-100">
+      <div style="padding: 0 21%;">
+        <div class="container-fluid">
+          <div class="row row-no-gutters">
+            <div class="col-6 d-flex center">
+              <a target="_blank" href="https://balsamiq.com/" class="image-link">
+                <img src="assets/img/Sponsor_Logos/balsamiq.svg" alt="Balsamiq" class="sponsor-image">
+              </a>
+            </div>
+            <div class="col-6 d-flex center">
+              <a target="_blank" href="https://repl.it/" class="image-link">
+                <img src="assets/img/Sponsor_Logos/replit.svg" alt="Repl.it" class="sponsor-image">
+              </a>
+            </div>
+          </div>
+          <div class="row row-no-gutters">
+            <div class="col-6 d-flex center">
+              <a target="_blank" href="https://mccaffreys.com/" class="image-link">
+                <img src="assets/img/Sponsor_Logos/mcafferys.png" alt="McCaffreys" class="sponsor-image">
+              </a>
+            </div>
+            <div class="col-6 d-flex center">
+              <a target="_blank" href="https://www.echoar.xyz/" class="image-link">
+                <img src="assets/img/Sponsor_Logos/echoar.webp" alt="echoAR" class="sponsor-image">
+              </a>
+            </div>
+          </div>
+          <div class="row row-no-gutters">
+            <div class="offset-3 col-6 d-flex center">
+              <a target="_blank" href="https://www.digitalocean.com/" class="image-link">
+                <img src="assets/img/Sponsor_Logos/digitalocean.svg" alt="Digital Ocean" class="sponsor-image">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function roots_content(){
+      $("#roots-spacer").css("margin-top", "calc(-"+$("#roots").height()+"px)");
+      $("#roots-spacer").css("height", "calc("+$("#roots").height()+"px)");
+    }
+    roots_content();
+    $(window).on('resize', roots_content);
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 </body>
