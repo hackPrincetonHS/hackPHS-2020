@@ -71,6 +71,7 @@ html {
   flex-basis: 0;
 }
 .faq-text{
+  width: 100%;
   color:black;
 }
 .card-header .faq-text{
@@ -121,9 +122,6 @@ text-decoration-none{
   justify-content: center;
   align-items: center;
 }
-.text-center{
-  text-align: center;
-}
 .prevent-collapse{
   overflow: hidden;
 }
@@ -168,9 +166,6 @@ text-decoration-none{
 
 .show~.order-collapsing-3, .collapsing~.order-collapsing-3{
   order: 3;
-}
-.show~.order-collapsing-2, .collapsing~.order-collapsing-2{
-  order: 2;
 }
 
 .show~* .d-collapsing-none, .collapsing~* .d-collapsing-none{
