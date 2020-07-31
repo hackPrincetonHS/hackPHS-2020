@@ -104,8 +104,12 @@ html {
 #foliage-content a{
   color: white;
 }
-.floating-text h1, .floating-text h3, .floating-text p{
+.floating-text h1, .floating-text h2, .floating-text p{
    color:#ffc490;
+ }
+
+ .h3{
+  font-size: 1.75rem;
  }
 
 text-decoration-none{
@@ -190,7 +194,7 @@ text-decoration-none{
   border-radius: 40px;
   color: white;
   font-family: "Montserrat";
-  background: #007bff;
+  background: #007bffcc;
   text-decoration: none;
   font-size: 1.2rem;
   letter-spacing: 0.1em;

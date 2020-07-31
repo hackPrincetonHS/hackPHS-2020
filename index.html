@@ -56,10 +56,10 @@
       </ul>
     </div>
     <form class="form-inline my-2 my-md-0 flex-row-reverse centering-div centering-sm-unset order-5 order-collapsing-3" id="regbuttonnav d-navthree-none">
-      <button class="navbar-toggler d-collapsing-none" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+      <button aria-hidden="true" class="navbar-toggler d-collapsing-none" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <button class="navbar-toggler d-none d-collapsing-block" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+      <button aria-hidden="true" class="navbar-toggler d-none d-collapsing-block" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
         <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z"/>
           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
@@ -95,7 +95,7 @@
         </span>
       </div>
       <div class="d-flex justify-content-center" style="margin-top:20px">
-        <a class="btn btn-round" href="https://clipboard.hackphs.tech/" role="button">Register Now!</a>
+        <a class="btn btn-round" aria-label="Register" href="https://clipboard.hackphs.tech/" role="button">Register Now!</a>
       </div>
       <div class="container position-relative" style="margin-top:10%">
         <div id="about" class="scroll-position"></div>
@@ -105,13 +105,13 @@
               <div class="text-center">
                 <h1>About</h1>
                 <hr/>
-                <h3>What is hackPHS?</h3>
+                <h2 class="h3">What is hackPHS?</h2>
                 <p>hackPHS hosts over 300 high school students from across New Jersey to collaborate, innovate, and create in a 24-hour, student organized hackathon based at Princeton High School. Whether you're a complete beginner or an experienced hacker, hackPHS will have something for you!</p>
-                <h3>When and Where is hackPHS?</h3>
+                <h2 class="h3">When and Where is hackPHS?</h2>
                 <p>hackPHS is moving online due to COVID-19. This means that anyone, anywhere in the world can participate! <b>All times are tentative</b>, but as of now the opening ceremony is planned to start at <b>10AM</b> on Saturday and the closing ceremony will end at <b>12PM</b> on Sunday</p>
-                <h3>Who pays for all this?  </h3>
+                <h2 class="h3">Who pays for all this?  </h2>
                 <p>hackPHS is completely free to everyone, thanks to our amazing <a href="#sponsors">sponsors!</a></p>
-                <h3>What is a hackathon?</h3>
+                <h2 class="h3">What is a hackathon?</h2>
                 <p>Hackathons are where creative and enthusiastic people come together to build awesome projects in a single all-nighter. With awesome workshops and incredible prizes, hackers will learn about new tech, build innovative solutions to real-world problems, and share their creation with the community, all in one event. If you are looking for a competition, a place to meet fellow hackers, or even just a place to learn how to code, hackathons are for you. If you want to learn more, see the <a href="https://mlh.io/faq">MLH Hackathon FAQ.</a></p>
               </div>
             </div>
@@ -343,36 +343,40 @@
         <div class="container-fluid">
           <div class="row row-no-gutters">
             <div class="col-6 d-flex center">
-              <a target="_blank" href="https://balsamiq.com/" class="image-link">
+              <a target="_blank" rel="noopener" href="https://balsamiq.com/" class="image-link">
                 <img src="assets/img/Sponsor_Logos/balsamiq.svg" alt="Balsamiq" class="sponsor-image">
               </a>
             </div>
             <div class="col-6 d-flex center">
-              <a target="_blank" href="https://repl.it/" class="image-link">
+              <a target="_blank" rel="noopener" href="https://repl.it/" class="image-link">
                 <img src="assets/img/Sponsor_Logos/replit.svg" alt="Repl.it" class="sponsor-image">
               </a>
             </div>
           </div>
           <div class="row row-no-gutters">
             <div class="col-6 d-flex center">
-              <a target="_blank" href="https://mccaffreys.com/" class="image-link">
+              <a target="_blank" rel="noopener" href="https://mccaffreys.com/" class="image-link">
                 <img src="assets/img/Sponsor_Logos/mcafferys.png" alt="McCaffreys" class="sponsor-image">
               </a>
             </div>
             <div class="col-6 d-flex center">
-              <a target="_blank" href="https://www.echoar.xyz/" class="image-link">
-                <img src="assets/img/Sponsor_Logos/echoar.png" alt="echoAR" class="sponsor-image">
+              <a target="_blank" rel="noopener" href="http://www.fibronest.com/" class="image-link" style="padding-top:5%">
+                <img src="assets/img/Sponsor_Logos/pharmanest.svg" alt="PharmaNest" class="sponsor-image">
               </a>
             </div>
           </div>
           <div class="row row-no-gutters">
-            <div class="offset-3 col-6 d-flex center">
-              <a target="_blank" href="https://www.digitalocean.com/" class="image-link">
+            <div class="col-6 d-flex center">
+              <a target="_blank" rel="noopener" href="https://www.echoar.xyz/" class="image-link">
+                <img src="assets/img/Sponsor_Logos/echoar.png" alt="echoAR" class="sponsor-image">
+              </a>
+            </div>
+            <div class="col-6 d-flex center">
+              <a target="_blank" rel="noopener" href="https://www.digitalocean.com/" class="image-link">
                 <img src="assets/img/Sponsor_Logos/digitalocean.svg" alt="Digital Ocean" class="sponsor-image">
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </div>
