@@ -17,13 +17,38 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/mycss.css">
+  <script>
+    const debounce = (func, wait) => {
+      let timeout;
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script></head>
+      return function executedFunction(...args) {
+        const later = () => {
+          clearTimeout(timeout);
+          func(...args);
+        };
 
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+      };
+    };
+    function htmlToElement(html) {
+      var template = document.createElement('template');
+      html = html.trim(); // Never return a text node of whitespace as the result
+      template.innerHTML = html;
+      return template.content.firstChild;
+    }
+    function attatchAndRunFunction(func){
+      func();
+      window.addEventListener("load", func, false);
+      window.addEventListener("resize", debounce(func, 50), false);
+    }
+  </script>
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top custom-navbar-brand">
+    <a class="navbar-brand centering-div centering-sm-unset order-1" href="/">
+      <img src="assets/img/hackphslogo2019.svg" width="65" alt="hackPHS">
+    </a>
+    <a class="navbar-brand custom-brand order-2" href="/">hackPHS</a>
     <!-- <form class="form-inline my-2 my-md-0 space-for-mlh" id="regbuttonnav"> -->
     <div class="collapse navbar-collapse order-4" id="navbarTogglerDemo02">
       <ul class="navbar-nav mt-2 mt-sm-0" style="font-size: 1.025rem">
@@ -55,7 +80,7 @@
         </li>
       </ul>
     </div>
-    <form class="form-inline my-2 my-md-0 flex-row-reverse centering-div centering-sm-unset order-5 order-collapsing-3" id="regbuttonnav d-navthree-none">
+    <form class="form-inline d-sm-none my-2 my-md-0 flex-row-reverse centering-div order-3" id="regbuttonnav d-navthree-none">
       <button aria-hidden="true" class="navbar-toggler d-collapsing-none" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -65,21 +90,18 @@
           <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z"/>
         </svg>
       </button>
-      <div class="register-button pl-3 d-none d-sm-block">
+    </form>
+    <form class="form-inline my-2 my-md-0 d-none d-sm-block order-5 flex-row-reverse">
+      <div class="register-button pl-3">
         <a class="btn btn-outline-light" href="https://clipboard.hackphs.tech/" role="button">Register</a>
       </div>
     </form>
-    <!-- <div class="d-none-if-collapse-showing centering-div"></div> -->
-    <a class="navbar-brand custom-brand order-2" href="/">hackPHS</a>
-    <a class="navbar-brand centering-div centering-sm-unset order-1" href="/">
-      <img src="assets/img/hackphslogo2019.svg" width="65" alt="hackPHS">
-    </a>
   </nav>
   <div id="foliage">
     <div id="Foliage_Top" class="background-image Foliage_Top"></div>
     <div id="mid-foliage">
-      <div id="half-mid-foliage" class="background-image Foliage_Mid_1"></div>
     </div>
+    <div id="half-mid-foliage" class="background-image Foliage_Mid_1"></div>
     <div id="Foliage_Bottom" class="background-image Foliage_Bottom"></div>
   </div>
   <div id="foliage-spacer" class="prevent-collapse">
@@ -136,32 +158,49 @@
   </div>
   <script>
     var BOTFOLIAGEFACTOR=0.15;
-    var fullFoliageBlock=$(`
+    var fullFoliageBlock=htmlToElement(`
     <div class="repeating-mid-foliage">
       <div class="background-image Foliage_Mid_1"></div>
       <div class="background-image Foliage_Mid_2"></div>
     </div>
     `);
     function foliage_content(){
-      $("#mid-foliage").children(".repeating-mid-foliage").remove();
-      $("#half-mid-foliage").show();
-      var contentHeight=$("#foliage-content").outerHeight();
-      var foliageBlockHeight=$("#half-mid-foliage").outerHeight();
-      var effContentHeight=contentHeight-$("#Foliage_Top").outerHeight()-$("#Foliage_Bottom").outerHeight()*BOTFOLIAGEFACTOR;
+      var halfMidFoliage=document.getElementById("half-mid-foliage");
+      if(halfMidFoliage.style.display!="block"){
+        //try to avoid reflow if we can
+        halfMidFoliage.style.display="block";
+      }
+      var effContentHeight=document.getElementById("foliage-content").clientHeight-document.getElementById("Foliage_Top").clientHeight-document.getElementById("Foliage_Bottom").clientHeight*BOTFOLIAGEFACTOR;
+      var foliageBlockHeight=halfMidFoliage.clientHeight;
       var numHalfBlocks=Math.ceil(effContentHeight/foliageBlockHeight);
-      for(var i=0; i<Math.floor(numHalfBlocks/2); i++){
-        $("#mid-foliage").prepend(fullFoliageBlock.clone());
+      var numFullBlocks=Math.floor(numHalfBlocks/2);
+
+      var currentNumberDoubleBlocks=document.querySelectorAll(".repeating-mid-foliage").length;
+      var midFoliage=document.getElementById("mid-foliage");
+      if(currentNumberDoubleBlocks>numFullBlocks) {
+        for(var i=currentNumberDoubleBlocks; i>numFullBlocks; i--){
+          midFoliage.removeChild(midFoliage.lastChild);
+        }
+      } else if(currentNumberDoubleBlocks<numFullBlocks) {
+        for(var i=currentNumberDoubleBlocks; i<numFullBlocks; i++){
+          midFoliage.appendChild(fullFoliageBlock.cloneNode(true));
+        }
       }
       if(numHalfBlocks%2==0){
-        $("#half-mid-foliage").hide();
+          halfMidFoliage.style.display="none";
       }
-      $("#foliage-spacer").css("margin-top", "-"+$("#foliage").height()+"px");
-      $("#foliage-spacer").height($("#foliage").height());
+
+      var foliageSpacer=document.getElementById("foliage-spacer");
+      var foliageHeight=document.getElementById("foliage").clientHeight;
+      foliageSpacer.style.marginTop="-"+foliageHeight+"px";
+      foliageSpacer.style.height=foliageHeight+"px";
     }
-    foliage_content();
-    $(window).on('resize', foliage_content);
+    attatchAndRunFunction(foliage_content);
   </script>
   <div id="trunk">
+    <div id="mid-trunk">
+
+    </div>
     <div id="half-trunk" class="background-image Trunk_Sky_1"></div>
     <div id="Roots_Start" class="background-image Roots_Start"></div>
   </div>
@@ -301,32 +340,55 @@
   </div>
   <script>
     var BOTTRUNKFACTOR=0.05;
-    var fullTrunkBlock=$(`
+    var fullTrunkBlock=htmlToElement(`
       <div class="repeating-trunk-block">
         <div class="background-image Trunk_Sky_1"></div>
         <div class="background-image Trunk_Sky_2"></div>
       </div>
     `);
     function trunk_content(){
-      $('.collapse').collapse("hide");
-      $(".collapsing").addClass("no-collapse");
-      $("#trunk").children(".repeating-trunk-block").remove();
-      $("#half-trunk").show();
-      var effContentHeight=$("#trunk-content").outerHeight() - $("#trunk").outerWidth()*0.1 - $("#Roots_Start").outerHeight()*BOTTRUNKFACTOR;
-      var trunkBlockHeight=$("#half-trunk").outerHeight();
+      if(typeof $ !== 'undefined'){
+        $('.collapse').collapse("hide");
+        $(".collapsing").addClass("no-collapse");
+      }
+      var halfTrunk=document.getElementById("half-trunk");
+      if(halfTrunk.style.display!="block"){
+        halfTrunk.style.display="block";
+      }
+      //reflow 1
+      var effContentHeight=document.getElementById("trunk-content").clientHeight - document.getElementById("trunk").clientWidth*0.1 - document.getElementById("Roots_Start").clientHeight*BOTTRUNKFACTOR;
+      var trunkBlockHeight=halfTrunk.clientHeight;
       var numHalfBlocks=Math.ceil(effContentHeight/trunkBlockHeight);
-      for(var i=0; i<Math.floor(numHalfBlocks/2); i++){
-        $("#trunk").prepend(fullTrunkBlock.clone());
+      var numFullBlocks=Math.floor(numHalfBlocks/2);
+
+      var currentNumberDoubleBlocks=document.querySelectorAll(".repeating-trunk-block").length;
+      var midTrunk=document.getElementById("mid-trunk");
+      if(currentNumberDoubleBlocks>numFullBlocks) {
+        for(var i=currentNumberDoubleBlocks; i>numFullBlocks; i--){
+          midTrunk.removeChild(midTrunk.lastChild);
+        }
+      } else if(currentNumberDoubleBlocks<numFullBlocks) {
+        for(var i=currentNumberDoubleBlocks; i<numFullBlocks; i++){
+          midTrunk.appendChild(fullTrunkBlock.cloneNode(true));
+        }
       }
+
       if(numHalfBlocks%2==0){
-        $("#half-trunk").hide();
+        halfTrunk.style.display="none";
       }
-      $("#trunk-spacer").css("margin-top", "calc(-"+$("#trunk").height()+"px - 10%)");
-      $("#trunk-spacer").css("height", "calc("+$("#trunk").height()+"px + "+($("#trunk").outerWidth()*0.1)+"px)");
-      $(".no-collapse").removeClass("no-collapse");
+      //reflow 2
+      var trunkSpacer=document.getElementById("trunk-spacer");
+      var trunk=document.getElementById("trunk");
+      var trunkHeight=trunk.clientHeight;
+
+      trunkSpacer.style.marginTop="calc(-"+trunkHeight+"px - 10%)";
+      trunkSpacer.style.height="calc("+trunkHeight+"px + "+(trunk.clientWidth*0.1)+"px)";
+
+      if(typeof $ !== 'undefined'){
+        $(".no-collapse").removeClass("no-collapse");
+      }
     }
-    trunk_content();
-    $(window).on('resize', trunk_content);
+    attatchAndRunFunction(trunk_content);
   </script>
   <div id="roots">
     <div id="Roots_Header" class="background-image Roots_Header"></div>
@@ -383,12 +445,16 @@
   </div>
   <script>
     function roots_content(){
-      $("#roots-spacer").css("margin-top", "calc(-"+$("#roots").height()+"px)");
-      $("#roots-spacer").css("height", "calc("+$("#roots").height()+"px)");
+      var rootsHeight=document.getElementById("roots").clientHeight;
+      var rootsSpacer=document.getElementById("roots-spacer");
+      rootsSpacer.style.marginTop="-"+rootsHeight+"px)";
+      rootsSpacer.style.height=rootsHeight+"px";
     }
-    roots_content();
-    $(window).on('resize', roots_content);
+    attatchAndRunFunction(roots_content);
   </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script></head>  
   <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
 </body>

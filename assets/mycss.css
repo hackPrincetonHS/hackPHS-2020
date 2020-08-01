@@ -168,10 +168,6 @@ text-decoration-none{
   max-height: 175px;
 }
 
-.show~.order-collapsing-3, .collapsing~.order-collapsing-3{
-  order: 3;
-}
-
 .show~* .d-collapsing-none, .collapsing~* .d-collapsing-none{
   display: none!important;
 }
