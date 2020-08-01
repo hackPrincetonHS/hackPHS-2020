@@ -21,10 +21,10 @@
     const debounce = (func, wait) => {
       let timeout;
 
-      return function executedFunction(...args) {
+      return function executedFunction() {
         const later = () => {
           clearTimeout(timeout);
-          func(...args);
+          func();
         };
 
         clearTimeout(timeout);
@@ -447,7 +447,7 @@
     function roots_content(){
       var rootsHeight=document.getElementById("roots").clientHeight;
       var rootsSpacer=document.getElementById("roots-spacer");
-      rootsSpacer.style.marginTop="-"+rootsHeight+"px)";
+      rootsSpacer.style.marginTop="-"+rootsHeight+"px";
       rootsSpacer.style.height=rootsHeight+"px";
     }
     attatchAndRunFunction(roots_content);
