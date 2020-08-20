@@ -392,7 +392,9 @@
   </script>
   <div id="roots">
     <div id="Roots_Header" class="background-image Roots_Header"></div>
-    <div id="Roots_Body" class="background-image Roots_Body"></div>
+    <div id="mid-roots">
+      <div id="Roots_Body" class="background-image Roots_Body"></div>
+    </div>
     <div id="Roots_End" class="background-image Roots_End"></div>
   </div>
   <div id="roots-spacer" class="prevent-collapse position-relative">
@@ -439,12 +441,36 @@
               </a>
             </div>
           </div>
+          <div class="row row-no-gutters">
+            <div class="col-6 offset-3 d-flex center">
+              <a target="_blank" rel="noopener" href="https://www.hyperxgaming.com/" class="image-link">
+                <img src="assets/img/Sponsor_Logos/hyperx.svg" alt="hyperX Gaming" class="sponsor-image">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <script>
     function roots_content(){
+      var body_block=htmlToElement(`<div class="background-image Roots_Body"></div>`);
+      var effContentHeight=document.getElementById("roots-content").clientHeight-document.getElementById("Roots_Header").clientHeight-document.getElementById("Roots_End").clientHeight*0.625;
+      console.log(effContentHeight);
+      var numBlocks=Math.ceil(effContentHeight/document.getElementById("Roots_Body").clientHeight);
+      console.log(document.getElementById("Roots_Body").clientHeight);
+      console.log(numBlocks);
+      var currentNumberBlocks=document.querySelectorAll(".Roots_Body").length;
+      var midRoots=document.getElementById("mid-roots");
+      if(currentNumberBlocks>numBlocks) {
+        for(var i=currentNumberBlocks; i>numBlocks; i--){
+          midRoots.removeChild(midRoots.lastChild);
+        }
+      } else if(currentNumberBlocks<numBlocks) {
+        for(var i=currentNumberBlocks; i<numBlocks; i++){
+          midRoots.appendChild(body_block.cloneNode(true));
+        }
+      }
       var rootsHeight=document.getElementById("roots").clientHeight;
       var rootsSpacer=document.getElementById("roots-spacer");
       rootsSpacer.style.marginTop="-"+rootsHeight+"px";
