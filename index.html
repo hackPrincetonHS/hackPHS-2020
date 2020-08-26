@@ -43,13 +43,13 @@
       window.addEventListener("resize", debounce(func, 50), false);
     }
   </script>
+<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a></head>
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top custom-navbar-brand">
-    <a class="navbar-brand centering-div centering-sm-unset order-1" href="/">
+    <a class="navbar-brand centering-sm-unset order-2" href="/">
       <img src="assets/img/hackphslogo2019.svg" width="65" alt="hackPHS">
     </a>
-    <a class="navbar-brand custom-brand order-2" href="/">hackPHS</a>
-    <!-- <form class="form-inline my-2 my-md-0 space-for-mlh" id="regbuttonnav"> -->
+    <a class="navbar-brand custom-brand order-3 d-none d-sm-block" href="/">hackPHS</a>
     <div class="collapse navbar-collapse order-4" id="navbarTogglerDemo02">
       <ul class="navbar-nav mt-2 mt-sm-0" style="font-size: 1.025rem">
         <li class="nav-item d-none d-sm-inline">
@@ -80,7 +80,7 @@
         </li>
       </ul>
     </div>
-    <form class="form-inline d-sm-none my-2 my-md-0 flex-row-reverse centering-div order-3" id="regbuttonnav d-navthree-none">
+    <form class="form-inline d-sm-none my-2 my-md-0 centering-div order-1" id="regbuttonnav d-navthree-none">
       <button aria-hidden="true" class="navbar-toggler d-collapsing-none" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -91,11 +91,14 @@
         </svg>
       </button>
     </form>
+    <div class="centering-div order-3 d-sm-none"></div>
+    <!--
     <form class="form-inline my-2 my-md-0 d-none d-sm-block order-5 flex-row-reverse">
-      <div class="register-button pl-3">
+      <div class="register-button pl-3" style="margin-right: clamp(160px, calc(10vw + 100px), 200px);">
         <a class="btn btn-outline-light" href="https://clipboard.hackphs.tech/" role="button">Register</a>
       </div>
     </form>
+    -->
   </nav>
   <div id="foliage">
     <div id="Foliage_Top" class="background-image Foliage_Top"></div>
@@ -130,7 +133,7 @@
                 <h2 class="h3">What is hackPHS?</h2>
                 <p>hackPHS hosts over 300 high school students from across New Jersey to collaborate, innovate, and create in a 24-hour, student organized hackathon based at Princeton High School. Whether you're a complete beginner or an experienced hacker, hackPHS will have something for you!</p>
                 <h2 class="h3">When and Where is hackPHS?</h2>
-                <p>hackPHS is moving online due to COVID-19. This means that anyone, anywhere in the world can participate! <b>All times are tentative</b>, but as of now the opening ceremony is planned to start at <b>10AM</b> on Saturday and the closing ceremony will end at <b>12PM</b> on Sunday</p>
+                <p>hackPHS is moving online due to COVID-19. This means that anyone, anywhere in the world can participate! <b>All times are tentative</b>, but as of now the opening ceremony is planned to start at <b>10AM</b> on Saturday and the closing ceremony will end at <b>1PM</b> on Sunday</p>
                 <h2 class="h3">Who pays for all this?  </h2>
                 <p>hackPHS is completely free to everyone, thanks to our amazing <a href="#sponsors">sponsors!</a></p>
                 <h2 class="h3">What is a hackathon?</h2>
@@ -246,7 +249,7 @@
                 </div>
                 <div id="collapseApply" class="collapse" aria-labelledby="headingApply" data-parent="#faqAccordion">
                   <div class="card-body">
-                    Apply by going to our <a href="https://clipboard.hackphs.tech/">registration link</a>. Swag will be distributed on a first-come first-serve basis, so apply ASAP!
+                    Apply by going to our <a href="https://clipboard.hackphs.tech/">clipboard</a>. Swag will be distributed on a first-come first-serve basis, so apply ASAP!
                   </div>
                 </div>
               </div>
