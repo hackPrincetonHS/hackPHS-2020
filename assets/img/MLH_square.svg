@@ -7,11 +7,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 1426.95 803.14"
+   viewBox="0 0 803.14004 803.14"
    version="1.1"
    id="svg18842"
-   sodipodi:docname="Foliage_Top.svg"
-   width="1426.95"
+   sodipodi:docname="MLH_square.svg"
+   width="803.14001"
    height="803.14001"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
@@ -42,7 +42,7 @@
      inkscape:snap-page="true"
      inkscape:zoom="0.83112382"
      inkscape:cx="876.58062"
-     inkscape:cy="537.55019"
+     inkscape:cy="441.29497"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
@@ -51,13 +51,26 @@
      id="defs4">
     <style
        id="style2">.cls-1{fill:#69b746;}.cls-2{fill:#2e8e29;}.cls-3{fill:#dab3ba;}.cls-4{fill:#d4b0c0;}.cls-5{fill:#ceadc6;}.cls-6{fill:#c8aacc;}.cls-7{fill:#c2a7d2;}.cls-8{fill:#bca4d8;}.cls-9{fill:#b6a1de;}.cls-10{fill:#b09ee4;}.cls-11{fill:#aa9bea;}.cls-12{fill:#a498f0;}.cls-13{fill:#4fab36;}.cls-14{fill:#489b31;}.cls-15{fill:#80c658;}.cls-16{fill:#e1d5d7;}</style>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath29361">
+      <rect
+         style="opacity:1;fill:#000098;fill-opacity:1;stroke:#000000;stroke-width:0.15496063;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect29363"
+         width="803.14001"
+         height="803.14001"
+         x="0"
+         y="9.2968749e-06" />
+    </clipPath>
   </defs>
   <g
      id="Layer_2"
-     data-name="Layer 2">
+     data-name="Layer 2"
+     transform="translate(0,-9.2968751e-6)">
     <g
        id="Layer_1-2"
-       data-name="Layer 1">
+       data-name="Layer 1"
+       clip-path="url(#clipPath29361)">
       <rect
          class="cls-10"
          y="120.85"
@@ -3171,18 +3184,6 @@
          id="rect1806"
          style="fill:#2e8e29" />
       <rect
-         x="1282.16"
-         y="164.81"
-         width="12.16"
-         height="12.08"
-         id="rect1872" />
-      <rect
-         x="1282.16"
-         y="153.81"
-         width="12.16"
-         height="12.09"
-         id="rect1874" />
-      <rect
          class="cls-1"
          x="1271.11"
          y="791.06"
@@ -3375,12 +3376,6 @@
          id="rect1950"
          style="fill:#2e8e29" />
       <rect
-         x="1271.11"
-         y="164.81"
-         width="12.16"
-         height="12.08"
-         id="rect2018" />
-      <rect
          class="cls-1"
          x="1260.05"
          y="791.06"
@@ -3564,12 +3559,6 @@
          height="12.08"
          id="rect2094"
          style="fill:#2e8e29" />
-      <rect
-         x="1260.05"
-         y="175.78999"
-         width="12.17"
-         height="12.08"
-         id="rect2162" />
       <rect
          class="cls-1"
          x="1249"
@@ -3755,12 +3744,6 @@
          id="rect2240"
          style="fill:#2e8e29" />
       <rect
-         x="1249"
-         y="175.78999"
-         width="12.16"
-         height="12.08"
-         id="rect2308" />
-      <rect
          class="cls-1"
          x="1237.95"
          y="791.06"
@@ -3944,12 +3927,6 @@
          height="12.08"
          id="rect2386"
          style="fill:#2e8e29" />
-      <rect
-         x="1237.95"
-         y="175.78999"
-         width="12.16"
-         height="12.08"
-         id="rect2454" />
       <rect
          class="cls-1"
          x="1226.9"
@@ -4150,24 +4127,6 @@
          height="12.09"
          id="rect2536"
          style="fill:#489b31" />
-      <rect
-         x="1226.9"
-         y="329.60999"
-         width="12.16"
-         height="12.08"
-         id="rect2572" />
-      <rect
-         x="1226.9"
-         y="318.62"
-         width="12.16"
-         height="12.08"
-         id="rect2574" />
-      <rect
-         x="1226.9"
-         y="175.78999"
-         width="12.16"
-         height="12.08"
-         id="rect2600" />
       <rect
          class="cls-1"
          x="1215.84"
@@ -4377,24 +4336,6 @@
          id="rect2684"
          style="fill:#489b31" />
       <rect
-         x="1215.84"
-         y="318.62"
-         width="12.17"
-         height="12.08"
-         id="rect2720" />
-      <rect
-         x="1215.84"
-         y="186.78"
-         width="12.17"
-         height="12.08"
-         id="rect2744" />
-      <rect
-         x="1215.84"
-         y="175.78999"
-         width="12.17"
-         height="12.08"
-         id="rect2746" />
-      <rect
          class="cls-1"
          x="1204.79"
          y="791.06"
@@ -4602,24 +4543,6 @@
          height="12.08"
          id="rect2830"
          style="fill:#489b31" />
-      <rect
-         x="1204.79"
-         y="307.63"
-         width="12.16"
-         height="12.09"
-         id="rect2868" />
-      <rect
-         x="1204.79"
-         y="197.75999"
-         width="12.16"
-         height="12.09"
-         id="rect2888" />
-      <rect
-         x="1204.79"
-         y="186.78"
-         width="12.16"
-         height="12.08"
-         id="rect2890" />
       <rect
          class="cls-1"
          x="1193.74"
@@ -4837,24 +4760,6 @@
          id="rect2978"
          style="fill:#489b31" />
       <rect
-         x="1193.74"
-         y="307.63"
-         width="12.16"
-         height="12.09"
-         id="rect3014" />
-      <rect
-         x="1193.74"
-         y="186.78"
-         width="12.16"
-         height="12.08"
-         id="rect3036" />
-      <rect
-         x="1193.74"
-         y="175.78999"
-         width="12.16"
-         height="12.08"
-         id="rect3038" />
-      <rect
          class="cls-1"
          x="1182.6899"
          y="791.06"
@@ -5070,18 +4975,6 @@
          height="12.08"
          id="rect3124"
          style="fill:#489b31" />
-      <rect
-         x="1182.6899"
-         y="307.63"
-         width="12.16"
-         height="12.09"
-         id="rect3160" />
-      <rect
-         x="1182.6899"
-         y="175.78999"
-         width="12.16"
-         height="12.08"
-         id="rect3184" />
       <rect
          class="cls-1"
          x="1171.62"
@@ -5299,18 +5192,6 @@
          id="rect3270"
          style="fill:#489b31" />
       <rect
-         x="1171.62"
-         y="307.63"
-         width="12.17"
-         height="12.09"
-         id="rect3306" />
-      <rect
-         x="1171.62"
-         y="175.78999"
-         width="12.17"
-         height="12.08"
-         id="rect3330" />
-      <rect
          class="cls-1"
          x="1160.5699"
          y="791.06"
@@ -5526,42 +5407,6 @@
          height="12.08"
          id="rect3416"
          style="fill:#489b31" />
-      <rect
-         x="1160.5699"
-         y="318.62"
-         width="12.16"
-         height="12.08"
-         id="rect3450" />
-      <rect
-         x="1160.5699"
-         y="307.63"
-         width="12.16"
-         height="12.09"
-         id="rect3452" />
-      <rect
-         x="1160.5699"
-         y="274.67999"
-         width="12.16"
-         height="12.08"
-         id="rect3458" />
-      <rect
-         x="1160.5699"
-         y="263.67999"
-         width="12.16"
-         height="12.09"
-         id="rect3460" />
-      <rect
-         x="1160.5699"
-         y="252.7"
-         width="12.16"
-         height="12.08"
-         id="rect3462" />
-      <rect
-         x="1160.5699"
-         y="175.78999"
-         width="12.16"
-         height="12.08"
-         id="rect3476" />
       <rect
          class="cls-1"
          x="1149.52"
@@ -5779,36 +5624,6 @@
          id="rect3562"
          style="fill:#489b31" />
       <rect
-         x="1149.52"
-         y="329.60999"
-         width="12.16"
-         height="12.08"
-         id="rect3594" />
-      <rect
-         x="1149.52"
-         y="318.62"
-         width="12.16"
-         height="12.08"
-         id="rect3596" />
-      <rect
-         x="1149.52"
-         y="252.7"
-         width="12.16"
-         height="12.08"
-         id="rect3608" />
-      <rect
-         x="1149.52"
-         y="241.71001"
-         width="12.16"
-         height="12.08"
-         id="rect3610" />
-      <rect
-         x="1149.52"
-         y="175.78999"
-         width="12.16"
-         height="12.08"
-         id="rect3622" />
-      <rect
          class="cls-1"
          x="1138.47"
          y="791.06"
@@ -6024,36 +5839,6 @@
          height="12.08"
          id="rect3708"
          style="fill:#489b31" />
-      <rect
-         x="1138.47"
-         y="318.62"
-         width="12.16"
-         height="12.08"
-         id="rect3742" />
-      <rect
-         x="1138.47"
-         y="307.63"
-         width="12.16"
-         height="12.09"
-         id="rect3744" />
-      <rect
-         x="1138.47"
-         y="241.71001"
-         width="12.16"
-         height="12.08"
-         id="rect3756" />
-      <rect
-         x="1138.47"
-         y="230.72"
-         width="12.16"
-         height="12.09"
-         id="rect3758" />
-      <rect
-         x="1138.47"
-         y="164.81"
-         width="12.16"
-         height="12.08"
-         id="rect3770" />
       <rect
          class="cls-1"
          x="1127.41"
@@ -6271,30 +6056,6 @@
          id="rect3854"
          style="fill:#489b31" />
       <rect
-         x="1127.41"
-         y="307.63"
-         width="12.17"
-         height="12.09"
-         id="rect3890" />
-      <rect
-         x="1127.41"
-         y="230.72"
-         width="12.17"
-         height="12.09"
-         id="rect3904" />
-      <rect
-         x="1127.41"
-         y="164.81"
-         width="12.17"
-         height="12.08"
-         id="rect3916" />
-      <rect
-         x="1127.41"
-         y="153.81"
-         width="12.17"
-         height="12.09"
-         id="rect3918" />
-      <rect
          class="cls-1"
          x="1116.36"
          y="791.06"
@@ -6511,18 +6272,6 @@
          id="rect4000"
          style="fill:#489b31" />
       <rect
-         x="1116.36"
-         y="307.63"
-         width="12.16"
-         height="12.09"
-         id="rect4036" />
-      <rect
-         x="1116.36"
-         y="230.72"
-         width="12.16"
-         height="12.09"
-         id="rect4050" />
-      <rect
          class="cls-1"
          x="1105.3101"
          y="791.06"
@@ -6730,18 +6479,6 @@
          height="12.08"
          id="rect4144"
          style="fill:#489b31" />
-      <rect
-         x="1105.3101"
-         y="307.63"
-         width="12.16"
-         height="12.09"
-         id="rect4182" />
-      <rect
-         x="1105.3101"
-         y="241.71001"
-         width="12.16"
-         height="12.08"
-         id="rect4194" />
       <rect
          class="cls-1"
          x="1094.26"
@@ -6958,18 +6695,6 @@
          height="12.08"
          id="rect4292"
          style="fill:#489b31" />
-      <rect
-         x="1094.26"
-         y="307.63"
-         width="12.16"
-         height="12.09"
-         id="rect4328" />
-      <rect
-         x="1094.26"
-         y="230.72"
-         width="12.16"
-         height="12.09"
-         id="rect4342" />
       <rect
          class="cls-1"
          x="1083.2"
@@ -7195,18 +6920,6 @@
          id="rect4440"
          style="fill:#489b31" />
       <rect
-         x="1083.2"
-         y="318.62"
-         width="12.17"
-         height="12.08"
-         id="rect4472" />
-      <rect
-         x="1083.2"
-         y="230.72"
-         width="12.17"
-         height="12.09"
-         id="rect4488" />
-      <rect
          class="cls-14"
          x="1072.15"
          y="791.06"
@@ -7430,30 +7143,6 @@
          height="12.08"
          id="rect4586"
          style="fill:#489b31" />
-      <rect
-         x="1072.15"
-         y="329.60999"
-         width="12.16"
-         height="12.08"
-         id="rect4616" />
-      <rect
-         x="1072.15"
-         y="318.62"
-         width="12.16"
-         height="12.08"
-         id="rect4618" />
-      <rect
-         x="1072.15"
-         y="241.71001"
-         width="12.16"
-         height="12.08"
-         id="rect4632" />
-      <rect
-         x="1072.15"
-         y="230.72"
-         width="12.16"
-         height="12.09"
-         id="rect4634" />
       <rect
          class="cls-14"
          x="1061.1"
@@ -7679,18 +7368,6 @@
          id="rect4732"
          style="fill:#489b31" />
       <rect
-         x="1061.1"
-         y="252.7"
-         width="12.16"
-         height="12.08"
-         id="rect4776" />
-      <rect
-         x="1061.1"
-         y="241.71001"
-         width="12.16"
-         height="12.08"
-         id="rect4778" />
-      <rect
          class="cls-14"
          x="1050.05"
          y="791.06"
@@ -7914,24 +7591,364 @@
          height="12.08"
          id="rect4878"
          style="fill:#489b31" />
-      <rect
-         x="1050.05"
-         y="274.67999"
-         width="12.16"
-         height="12.08"
-         id="rect4918" />
-      <rect
-         x="1050.05"
-         y="263.67999"
-         width="12.16"
-         height="12.09"
-         id="rect4920" />
-      <rect
-         x="1050.05"
-         y="252.7"
-         width="12.16"
-         height="12.08"
-         id="rect4922" />
+      <g
+         id="g29424"
+         transform="translate(-594.34331)">
+        <rect
+           id="rect1872"
+           height="12.08"
+           width="12.16"
+           y="164.81"
+           x="1282.16" />
+        <rect
+           id="rect1874"
+           height="12.09"
+           width="12.16"
+           y="153.81"
+           x="1282.16" />
+        <rect
+           id="rect2018"
+           height="12.08"
+           width="12.16"
+           y="164.81"
+           x="1271.11" />
+        <rect
+           id="rect2162"
+           height="12.08"
+           width="12.17"
+           y="175.78999"
+           x="1260.05" />
+        <rect
+           id="rect2308"
+           height="12.08"
+           width="12.16"
+           y="175.78999"
+           x="1249" />
+        <rect
+           id="rect2454"
+           height="12.08"
+           width="12.16"
+           y="175.78999"
+           x="1237.95" />
+        <rect
+           id="rect2572"
+           height="12.08"
+           width="12.16"
+           y="329.60999"
+           x="1226.9" />
+        <rect
+           id="rect2574"
+           height="12.08"
+           width="12.16"
+           y="318.62"
+           x="1226.9" />
+        <rect
+           id="rect2600"
+           height="12.08"
+           width="12.16"
+           y="175.78999"
+           x="1226.9" />
+        <rect
+           id="rect2720"
+           height="12.08"
+           width="12.17"
+           y="318.62"
+           x="1215.84" />
+        <rect
+           id="rect2744"
+           height="12.08"
+           width="12.17"
+           y="186.78"
+           x="1215.84" />
+        <rect
+           id="rect2746"
+           height="12.08"
+           width="12.17"
+           y="175.78999"
+           x="1215.84" />
+        <rect
+           id="rect2868"
+           height="12.09"
+           width="12.16"
+           y="307.63"
+           x="1204.79" />
+        <rect
+           id="rect2888"
+           height="12.09"
+           width="12.16"
+           y="197.75999"
+           x="1204.79" />
+        <rect
+           id="rect2890"
+           height="12.08"
+           width="12.16"
+           y="186.78"
+           x="1204.79" />
+        <rect
+           id="rect3014"
+           height="12.09"
+           width="12.16"
+           y="307.63"
+           x="1193.74" />
+        <rect
+           id="rect3036"
+           height="12.08"
+           width="12.16"
+           y="186.78"
+           x="1193.74" />
+        <rect
+           id="rect3038"
+           height="12.08"
+           width="12.16"
+           y="175.78999"
+           x="1193.74" />
+        <rect
+           id="rect3160"
+           height="12.09"
+           width="12.16"
+           y="307.63"
+           x="1182.6899" />
+        <rect
+           id="rect3184"
+           height="12.08"
+           width="12.16"
+           y="175.78999"
+           x="1182.6899" />
+        <rect
+           id="rect3306"
+           height="12.09"
+           width="12.17"
+           y="307.63"
+           x="1171.62" />
+        <rect
+           id="rect3330"
+           height="12.08"
+           width="12.17"
+           y="175.78999"
+           x="1171.62" />
+        <rect
+           id="rect3450"
+           height="12.08"
+           width="12.16"
+           y="318.62"
+           x="1160.5699" />
+        <rect
+           id="rect3452"
+           height="12.09"
+           width="12.16"
+           y="307.63"
+           x="1160.5699" />
+        <rect
+           id="rect3458"
+           height="12.08"
+           width="12.16"
+           y="274.67999"
+           x="1160.5699" />
+        <rect
+           id="rect3460"
+           height="12.09"
+           width="12.16"
+           y="263.67999"
+           x="1160.5699" />
+        <rect
+           id="rect3462"
+           height="12.08"
+           width="12.16"
+           y="252.7"
+           x="1160.5699" />
+        <rect
+           id="rect3476"
+           height="12.08"
+           width="12.16"
+           y="175.78999"
+           x="1160.5699" />
+        <rect
+           id="rect3594"
+           height="12.08"
+           width="12.16"
+           y="329.60999"
+           x="1149.52" />
+        <rect
+           id="rect3596"
+           height="12.08"
+           width="12.16"
+           y="318.62"
+           x="1149.52" />
+        <rect
+           id="rect3608"
+           height="12.08"
+           width="12.16"
+           y="252.7"
+           x="1149.52" />
+        <rect
+           id="rect3610"
+           height="12.08"
+           width="12.16"
+           y="241.71001"
+           x="1149.52" />
+        <rect
+           id="rect3622"
+           height="12.08"
+           width="12.16"
+           y="175.78999"
+           x="1149.52" />
+        <rect
+           id="rect3742"
+           height="12.08"
+           width="12.16"
+           y="318.62"
+           x="1138.47" />
+        <rect
+           id="rect3744"
+           height="12.09"
+           width="12.16"
+           y="307.63"
+           x="1138.47" />
+        <rect
+           id="rect3756"
+           height="12.08"
+           width="12.16"
+           y="241.71001"
+           x="1138.47" />
+        <rect
+           id="rect3758"
+           height="12.09"
+           width="12.16"
+           y="230.72"
+           x="1138.47" />
+        <rect
+           id="rect3770"
+           height="12.08"
+           width="12.16"
+           y="164.81"
+           x="1138.47" />
+        <rect
+           id="rect3890"
+           height="12.09"
+           width="12.17"
+           y="307.63"
+           x="1127.41" />
+        <rect
+           id="rect3904"
+           height="12.09"
+           width="12.17"
+           y="230.72"
+           x="1127.41" />
+        <rect
+           id="rect3916"
+           height="12.08"
+           width="12.17"
+           y="164.81"
+           x="1127.41" />
+        <rect
+           id="rect3918"
+           height="12.09"
+           width="12.17"
+           y="153.81"
+           x="1127.41" />
+        <rect
+           id="rect4036"
+           height="12.09"
+           width="12.16"
+           y="307.63"
+           x="1116.36" />
+        <rect
+           id="rect4050"
+           height="12.09"
+           width="12.16"
+           y="230.72"
+           x="1116.36" />
+        <rect
+           id="rect4182"
+           height="12.09"
+           width="12.16"
+           y="307.63"
+           x="1105.3101" />
+        <rect
+           id="rect4194"
+           height="12.08"
+           width="12.16"
+           y="241.71001"
+           x="1105.3101" />
+        <rect
+           id="rect4328"
+           height="12.09"
+           width="12.16"
+           y="307.63"
+           x="1094.26" />
+        <rect
+           id="rect4342"
+           height="12.09"
+           width="12.16"
+           y="230.72"
+           x="1094.26" />
+        <rect
+           id="rect4472"
+           height="12.08"
+           width="12.17"
+           y="318.62"
+           x="1083.2" />
+        <rect
+           id="rect4488"
+           height="12.09"
+           width="12.17"
+           y="230.72"
+           x="1083.2" />
+        <rect
+           id="rect4616"
+           height="12.08"
+           width="12.16"
+           y="329.60999"
+           x="1072.15" />
+        <rect
+           id="rect4618"
+           height="12.08"
+           width="12.16"
+           y="318.62"
+           x="1072.15" />
+        <rect
+           id="rect4632"
+           height="12.08"
+           width="12.16"
+           y="241.71001"
+           x="1072.15" />
+        <rect
+           id="rect4634"
+           height="12.09"
+           width="12.16"
+           y="230.72"
+           x="1072.15" />
+        <rect
+           id="rect4776"
+           height="12.08"
+           width="12.16"
+           y="252.7"
+           x="1061.1" />
+        <rect
+           id="rect4778"
+           height="12.08"
+           width="12.16"
+           y="241.71001"
+           x="1061.1" />
+        <rect
+           id="rect4918"
+           height="12.08"
+           width="12.16"
+           y="274.67999"
+           x="1050.05" />
+        <rect
+           id="rect4920"
+           height="12.09"
+           width="12.16"
+           y="263.67999"
+           x="1050.05" />
+        <rect
+           id="rect4922"
+           height="12.08"
+           width="12.16"
+           y="252.7"
+           x="1050.05" />
+      </g>
       <rect
          class="cls-14"
          x="1038.99"
@@ -24733,7 +24750,8 @@
          id="rect16412"
          style="fill:#489b31" />
       <g
-         id="g29295">
+         id="g29295"
+         transform="translate(-84.223311)">
         <rect
            style="fill:#e1d5d7"
            id="rect13828"
