@@ -410,6 +410,18 @@
         <div class="container-fluid">
           <div class="row row-no-gutters">
             <div class="col-6 d-flex center">
+              <a target="_blank" rel="noopener" href="https://newwave-foundation.org/" class="image-link">
+                <img src="assets/img/Sponsor_Logos/nwf.png" alt="New Wave Foundation" class="sponsor-image">
+              </a>
+            </div>
+            <div class="col-6 d-flex center">
+              <a target="_blank" rel="noopener" href="https://bubble.io/" class="image-link">
+                <img src="assets/img/Sponsor_Logos/bubble.svg" alt="Bubble" class="sponsor-image">
+              </a>
+            </div>
+          </div>
+          <div class="row row-no-gutters">
+            <div class="col-6 d-flex center">
               <a target="_blank" rel="noopener" href="https://balsamiq.com/" class="image-link">
                 <img src="assets/img/Sponsor_Logos/balsamiq.svg" alt="Balsamiq" class="sponsor-image">
               </a>
@@ -469,9 +481,14 @@
             </div>
           </div>
           <div class="row row-no-gutters">
-            <div class="col-6 offset-3 d-flex center">
+            <div class="col-6 d-flex center">
               <a target="_blank" rel="noopener" href="https://www.digitalocean.com/" class="image-link">
                 <img src="assets/img/Sponsor_Logos/digitalocean.svg" alt="Digital Ocean" class="sponsor-image">
+              </a>
+            </div>
+            <div class="col-6 d-flex center">
+              <a target="_blank" rel="noopener" href="https://www.wolframalpha.com/" class="image-link">
+                <img src="assets/img/Sponsor_Logos/wolfram.png" alt="Wolfram Alpha" class="sponsor-image">
               </a>
             </div>
           </div>
@@ -482,7 +499,7 @@
   <script>
     function roots_content(){
       var body_block=htmlToElement(`<div class="background-image Roots_Body"></div>`);
-      var effContentHeight=document.getElementById("roots-content").clientHeight-document.getElementById("Roots_Header").clientHeight-document.getElementById("Roots_End").clientHeight*0.625;
+      var effContentHeight=document.getElementById("roots-content").clientHeight-document.getElementById("Roots_Header").clientHeight-document.getElementById("Roots_End").clientHeight*0.4;
       console.log(effContentHeight);
       var numBlocks=Math.ceil(effContentHeight/document.getElementById("Roots_Body").clientHeight);
       console.log(document.getElementById("Roots_Body").clientHeight);
