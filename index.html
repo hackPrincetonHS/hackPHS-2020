@@ -358,7 +358,6 @@
       }
       //reflow 1
       var effContentHeight=document.getElementById("trunk-content").clientHeight - document.getElementById("trunk").clientWidth*0.1 - window.innerWidth*0.2 //squirrel;
-      console.log(effContentHeight)
       var trunkBlockHeight=halfTrunk.clientHeight;
       var numHalfBlocks=Math.ceil(effContentHeight/trunkBlockHeight);
       var numFullBlocks=Math.floor(numHalfBlocks/2);
@@ -675,7 +674,7 @@
   <script>
     function roots_content(){
       var body_block=htmlToElement(`<div class="background-image Roots_Body"></div>`);
-      var effContentHeight=document.getElementById("roots-content").clientHeight-document.getElementById("Roots_End").clientHeight*0.9;
+      var effContentHeight=document.getElementById("roots-content").clientHeight-document.getElementById("Roots_End").clientHeight*0.1;
       var numBlocks=Math.ceil(effContentHeight/document.getElementById("Roots_Body").clientHeight);
       var currentNumberBlocks=document.querySelectorAll(".Roots_Body").length;
       var midRoots=document.getElementById("mid-roots");
