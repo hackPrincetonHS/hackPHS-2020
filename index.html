@@ -205,7 +205,6 @@
 
     </div>
     <div id="half-trunk" class="background-image Trunk_Sky_1"></div>
-    <div id="Roots_Start" class="background-image Roots_Start"></div>
   </div>
   <div id="trunk-spacer" class="prevent-collapse" style="margin-right:15%">
     <div id="trunk-content" class="prevent-collapse">
@@ -342,7 +341,6 @@
     </div>
   </div>
   <script>
-    var BOTTRUNKFACTOR=0.05;
     var fullTrunkBlock=htmlToElement(`
       <div class="repeating-trunk-block">
         <div class="background-image Trunk_Sky_1"></div>
@@ -359,7 +357,8 @@
         halfTrunk.style.display="block";
       }
       //reflow 1
-      var effContentHeight=document.getElementById("trunk-content").clientHeight - document.getElementById("trunk").clientWidth*0.1 - document.getElementById("Roots_Start").clientHeight*BOTTRUNKFACTOR;
+      var effContentHeight=document.getElementById("trunk-content").clientHeight - document.getElementById("trunk").clientWidth*0.1 - window.innerWidth*0.2 //squirrel;
+      console.log(effContentHeight)
       var trunkBlockHeight=halfTrunk.clientHeight;
       var numHalfBlocks=Math.ceil(effContentHeight/trunkBlockHeight);
       var numFullBlocks=Math.floor(numHalfBlocks/2);
@@ -393,7 +392,184 @@
     }
     attatchAndRunFunction(trunk_content);
   </script>
+
+  <div id="scroll">
+    <div id="Scroll_Start" class="background-image Scroll_Start"></div>
+    <div id="mid-scroll">
+    </div>
+    <div id="half-scroll" class="background-image Scroll_1"></div>
+    <div id="Scroll_End" class="background-image Scroll_End"></div>
+  </div>
+  <div id="scroll-spacer" class="prevent-collapse w-100">
+    <div id="schedule" class="scroll-position"></div>
+    <div id="scroll-content" class="text-center">
+      <div style="width: 64%; margin-left: 14%; margin-top: 37%">
+        <h1 style="font-size: 3.5rem">Schedule</h1>
+        <table class="table schedule-table mt-3">
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">Event</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">9:30 AM</th>
+              <td>Server Opens</td>
+            </tr>
+            <tr>
+              <th scope="row">10:30 AM</th>
+              <td>Opening Ceremony</td>
+            </tr>
+            <tr>
+              <th scope="row">11:00 AM</th>
+              <td>Hacking Begins</td>
+            </tr>
+            <tr>
+              <th scope="row">11:00 AM</th>
+              <td>Team Building</td>
+            </tr>
+            <tr>
+              <th scope="row">11:30 AM</th>
+              <td>Intro to Python</td>
+            </tr>
+            <tr>
+              <th scope="row">1:00 PM</th>
+              <td>How to get an internship</td>
+            </tr>
+            <tr>
+              <th scope="row">2:00 PM</th>
+              <td>Intro to Java</td>
+            </tr>
+            <tr>
+              <th scope="row">3:00 PM</th>
+              <td>Beginner's Challenge</td>
+            </tr>
+            <tr>
+              <th scope="row">4:00 PM</th>
+              <td>How to start a Hackathon</td>
+            </tr>
+            <tr>
+              <th scope="row">4:30 PM</th>
+              <td>Build a Cloud-Connected AR/VR App in 15 minutes or less</td>
+            </tr>
+            <tr>
+              <th scope="row">5:00 PM</th>
+              <td>Intro to iOS/Swift</td>
+            </tr>
+            <tr>
+              <th scope="row">7:00 PM</th>
+              <td>Zoom Photo Booth Open</td>
+            </tr>
+            <tr>
+              <th scope="row">7:30 PM</th>
+              <td>3D Design/Printing</td>
+            </tr>
+            <tr>
+              <th scope="row">8:00 PM</th>
+              <td>Spyfall</td>
+            </tr>
+            <tr>
+              <th scope="row">8:30 PM</th>
+              <td>Logic/Github</td>
+            </tr>
+            <tr>
+              <th scope="row">9:00 PM</th>
+              <td>Intro to Arduino/Robotics</td>
+            </tr>
+            <tr>
+              <th scope="row">9:30 PM</th>
+              <td>Kahoot</td>
+            </tr>
+            <tr>
+              <th scope="row">10:00 PM</th>
+              <td>Chess Tournament</td>
+            </tr>
+            <tr>
+              <th scope="row">11:00 PM</th>
+              <td>Virtual Scavenger Hunt</td>
+            </tr>
+            <tr>
+              <th scope="row">12:30 AM</th>
+              <td>Mafia</td>
+            </tr>
+            <tr>
+              <th scope="row">1:00 AM</th>
+              <td>Skribbl</td>
+            </tr>
+            <tr>
+              <th scope="row">7:00 AM</th>
+              <td>Mediation/Yoga</td>
+            </tr>
+            <tr>
+              <th scope="row">10:00 AM</th>
+              <td>Submissions Close</td>
+            </tr>
+            <tr>
+              <th scope="row">10:30 AM</th>
+              <td>Judging Begins</td>
+            </tr>
+            <tr>
+              <th scope="row">12:00 PM</th>
+              <td>Judging Ends</td>
+            </tr>
+            <tr>
+              <th scope="row">1:00 PM</th>
+              <td>Q&A with Organizers</td>
+            </tr>
+            <tr>
+              <th scope="row">1:30 PM</th>
+              <td>Closing Ceremony</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script>
+    var fullScrollBlock=htmlToElement(`
+      <div class="repeating-scroll-block">
+        <div class="background-image Scroll_1"></div>
+        <div class="background-image Scroll_2"></div>
+      </div>
+    `);
+    function scroll_content(){
+      var halfScroll=document.getElementById("half-scroll");
+      if(halfScroll.style.display!="block"){
+        halfScroll.style.display="block";
+      }
+      var effContentHeight=document.getElementById("scroll-content").clientHeight-document.getElementById("Scroll_Start").clientWidth*0.2-document.getElementById("Scroll_End").clientWidth*0.1;
+      var scrollBlockHeight=halfScroll.clientHeight;
+      var numHalfBlocks=Math.ceil(effContentHeight/scrollBlockHeight);
+      var numFullBlocks=Math.floor(numHalfBlocks/2);
+
+      var currentNumberDoubleBlocks=document.querySelectorAll(".repeating-scroll-block").length;
+      var midScroll=document.getElementById("mid-scroll");
+      if(currentNumberDoubleBlocks>numFullBlocks) {
+        for(var i=currentNumberDoubleBlocks; i>numFullBlocks; i--){
+          midScroll.removeChild(midScroll.lastChild);
+        }
+      } else if(currentNumberDoubleBlocks<numFullBlocks) {
+        for(var i=currentNumberDoubleBlocks; i<numFullBlocks; i++){
+          midScroll.appendChild(fullScrollBlock.cloneNode(true));
+        }
+      }
+      if(numHalfBlocks%2==0){
+        halfScroll.style.display="none";
+      }
+      //reflow 2
+      var scrollSpacer=document.getElementById("scroll-spacer");
+      var scroll=document.getElementById("scroll");
+      var scrollHeight=scroll.clientHeight;
+
+      scrollSpacer.style.marginTop="calc(-"+scrollHeight+"px";
+      scrollSpacer.style.height="calc("+scrollHeight+"px";
+    }
+    attatchAndRunFunction(scroll_content);
+  </script>
+
   <div id="roots">
+    <div id="Roots_Start" class="background-image Roots_Start"></div>
     <div id="Roots_Header" class="background-image Roots_Header"></div>
     <div id="mid-roots">
       <div id="Roots_Body" class="background-image Roots_Body"></div>
@@ -402,10 +578,10 @@
   </div>
   <div id="roots-spacer" class="prevent-collapse position-relative">
     <div id="sponsors" class="scroll-position"></div>
-    <div style="margin-top: 5.8%" class="text-center">
+    <div style="margin-top: 44%" class="text-center">
       <h1 style="font-size: 11vw">Sponsors</h1>
     </div>
-    <div id="roots-content" style="position: absolute; top:0; background-image: none;" class="prevent-collapse Roots_Header w-100">
+    <div id="roots-content" style="margin-top: 7%" class="prevent-collapse w-100">
       <div style="padding: 0 21%;">
         <div class="container-fluid">
           <div class="row row-no-gutters">
@@ -499,11 +675,8 @@
   <script>
     function roots_content(){
       var body_block=htmlToElement(`<div class="background-image Roots_Body"></div>`);
-      var effContentHeight=document.getElementById("roots-content").clientHeight-document.getElementById("Roots_Header").clientHeight-document.getElementById("Roots_End").clientHeight*0.4;
-      console.log(effContentHeight);
+      var effContentHeight=document.getElementById("roots-content").clientHeight-document.getElementById("Roots_End").clientHeight*0.9;
       var numBlocks=Math.ceil(effContentHeight/document.getElementById("Roots_Body").clientHeight);
-      console.log(document.getElementById("Roots_Body").clientHeight);
-      console.log(numBlocks);
       var currentNumberBlocks=document.querySelectorAll(".Roots_Body").length;
       var midRoots=document.getElementById("mid-roots");
       if(currentNumberBlocks>numBlocks) {

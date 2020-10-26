@@ -33,9 +33,21 @@ html {
   padding-top: calc(360.97% / 1280.99 * 100);
   background-image: url("img/Trunk_Sky_2.svg");
 }
-.Branch_Scroll{
+.Scroll_Start{
   padding-top: calc(720.99% / 1280.99 * 100);
   background-image: url("img/Branch_Scroll.svg");
+}
+.Scroll_1{
+  padding-top: calc(360.97% / 1280.99 * 100);
+  background-image: url("img/Scroll_Trunk_1.svg");
+}
+.Scroll_2{
+  padding-top: calc(360.97% / 1280.99 * 100);
+  background-image: url("img/Scroll_Trunk_1.svg");
+}
+.Scroll_End{
+  padding-top: calc(360.97% / 1280.99 * 100);
+  background-image: url("img/Scroll_End.svg");
 }
 .Roots_Start{
   padding-top: calc(494.14% / 1280.99 * 100);
@@ -127,7 +139,7 @@ text-decoration-none{
   align-items: center;
 }
 .prevent-collapse{
-  overflow: hidden;
+  padding: 0.05px;
 }
 
 .row-no-gutters .image-link{
@@ -229,3 +241,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .brand-icon{
   font-size:2rem;
 }
+
+.schedule-table th, td{
+  border-color: #00000000!important;
+} 
